@@ -2,8 +2,6 @@ import { Container } from "./styled";
 import StyledForm from "../../components/StyledForm";
 import StyledInput from "../../components/StyledInput";
 import StyledButton from "../../components/StyledButton";
-import StyledLink from "../../components/StyledLink";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
 import axios from "axios";
@@ -37,6 +35,7 @@ export default function RegisterCard() {
     try {
       const res = await axios.post(URL, body, config);
       setIsLoading(false);
+      alert("usuário cadastrado com sucesso")
     } catch (err) {
       setIsLoading(false);
       alert(err.response.data.message);

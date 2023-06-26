@@ -38,7 +38,6 @@ export default function SignUpPage() {
 			
 		} catch (err) {
             setIsLoading(false)
-            console.log(err.response.data)
 			alert(err.response.data.message);
 		}
     }

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Container } from "./styled";
-import StyledLink from "../StyledLink";
+import { Container, StyledLink } from "./styled";
 
 export default function SideBar() {
   const [sidebar, setSidebar] = useState(false);
